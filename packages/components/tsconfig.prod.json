@@ -1,0 +1,9 @@
+{
+  "extends": "../../tsconfig.prod.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "lib"
+  },
+  "include": ["src", "../../@types/*.d.ts"],
+  "exclude": ["**/*.web.tsx", "**/demo"]
+}

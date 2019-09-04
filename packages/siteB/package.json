@@ -1,0 +1,38 @@
+{
+  "name": "@wise/site-b",
+  "version": "0.0.0",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "private": true,
+  "scripts": {
+    "start": "run-p start:*",
+    "start:web": "react-scripts start",
+    "build": "run-p build:*",
+    "build:web": "react-scripts build",
+    "test": "run-p test:*",
+    "test:web": "react-scripts test"
+  },
+  "dependencies": {
+    "@wise/components": "0.0.0",
+    "react-router-dom": "^5.0.1"
+  },
+  "devDependencies": {
+    "@wise/tools": "0.0.0",
+    "@wise/shared": "0.0.0",
+    "@types/react-router-dom": "^4.3.5"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "babel": {
+    "presets": [
+      "react-app"
+    ]
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie < 11",
+    "not op_mini all"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@wise/shared",
+  "version": "0.0.0",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "private": true,
+  "scripts": {
+    "start": "run-p start:*",
+    "start:lib": "tsc -p ./tsconfig.prod.json --watch",
+    "build": "run-p build:*",
+    "build:lib": "tsc -p ./tsconfig.prod.json",
+    "test": "run-p test:*",
+    "test:lib": "react-scripts test",
+    "clean": "rimraf lib"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@wise/tools": "0.0.0"
+  }
+}
